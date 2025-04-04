@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charada do Dia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto border border-gray-300">
+        <h1 class="text-3xl font-bold text-center mb-4">Charada do dia!?</h1>
+        <p id="per" class="text-center text-blue-500 mb-6"></p>
+        <div class="flex flex-col items-center space-y-4">
+            <input type="text" placeholder="Digite sua resposta..." class="border border-gray-300 rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" id="input-res">
+            <div class="flex justify-between w-full">
+                <button class="bg-green-200 hover:bg-green-300 text-green-700 font-bold py-2 px-4 rounded-lg mr-2" onclick="revealCharada()">
+                    Ver resposta
+                </button>
+                
+                <button class="bg-blue-200 hover:bg-blue-300 text-blue-700 font-bold py-2 px-4 rounded-lg ml-2" value="Refresh Page" onClick="window.location.reload()" >
+                    Próxima Charada
+                </button>
+            </div>
+            <div class="flex justify-around flex-col" id="res-container">
+                <p id="res"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
