@@ -1,4 +1,4 @@
-const baseUrl = "http://127.0.0.1:5000/"
+const baseUrl = "https://gerador-charadas-zeta.vercel.app/"
 const aleatorio = "charada"
 let per = document.querySelector('#per')
 let res = document.querySelector('#res')
